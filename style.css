@@ -1,0 +1,51 @@
+body {
+  background-color: var(--tg-theme-bg-color);
+}
+.example-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px;
+  background-color: bisque;
+}
+.card .img {
+  width: 100%;
+}
+
+.card .img img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.card .title {
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  font-weight: 600;
+  color: aquamarine;
+}
+
+.card .text {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card .button {
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: aquamarine;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-weight: 700;
+}
