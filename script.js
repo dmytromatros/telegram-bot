@@ -1,18 +1,20 @@
 let tg = window.Telegram.WebApp;
 
+tg.PopupParams.title = 'Opened popup by Dima'
+
 tg.MainButton.isVisible = true;
 tg.MainButton.onClick(() => {
-    console.log("Hello Main button!")
+    tg.PopupParams.title = "Hello Main button!"
 });
 
 tg.MainButton.setText('Do something');
 tg.BackButton.isVisible = true;
 tg.onEvent('mainButtonClicked', () => {
-    console.log('Hello Main button by tg!')
+    tg.PopupParams.title = 'Hello Main button by tg!'
 })
 
 document.querySelectorAll('.button').forEach(e => {
     e.addEventListener('click', () => {
-        console.log("just a button clicked!")
+        tg.PopupParams.title = "just a button clicked!"
     })
 })
